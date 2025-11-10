@@ -1,0 +1,298 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Centennial\\Semester 5\\COMP-231_Software Development Project 1\\Assignment\\Assignment 5\\comp231-002--Team1-TeamUp-SportsBooking\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4AA19832-D7D2-4BF6-B981-37B37C782E3B}|comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking.csproj|d:\\centennial\\semester 5\\comp-231_software development project 1\\assignment\\assignment 5\\comp231-002--team1-teamup-sportsbooking\\comp231-002--team1-teamup-sportsbooking\\views\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AA19832-D7D2-4BF6-B981-37B37C782E3B}|comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking.csproj|solutionrelative:comp231-002--team1-teamup-sportsbooking\\views\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AA19832-D7D2-4BF6-B981-37B37C782E3B}|comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking.csproj|d:\\centennial\\semester 5\\comp-231_software development project 1\\assignment\\assignment 5\\comp231-002--team1-teamup-sportsbooking\\comp231-002--team1-teamup-sportsbooking\\views\\audience.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AA19832-D7D2-4BF6-B981-37B37C782E3B}|comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking.csproj|solutionrelative:comp231-002--team1-teamup-sportsbooking\\views\\audience.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AA19832-D7D2-4BF6-B981-37B37C782E3B}|comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking.csproj|d:\\centennial\\semester 5\\comp-231_software development project 1\\assignment\\assignment 5\\comp231-002--team1-teamup-sportsbooking\\comp231-002--team1-teamup-sportsbooking\\views\\teamowner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AA19832-D7D2-4BF6-B981-37B37C782E3B}|comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking.csproj|solutionrelative:comp231-002--team1-teamup-sportsbooking\\views\\teamowner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AA19832-D7D2-4BF6-B981-37B37C782E3B}|comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking.csproj|d:\\centennial\\semester 5\\comp-231_software development project 1\\assignment\\assignment 5\\comp231-002--team1-teamup-sportsbooking\\comp231-002--team1-teamup-sportsbooking\\views\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AA19832-D7D2-4BF6-B981-37B37C782E3B}|comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking.csproj|solutionrelative:comp231-002--team1-teamup-sportsbooking\\views\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AA19832-D7D2-4BF6-B981-37B37C782E3B}|comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking.csproj|d:\\centennial\\semester 5\\comp-231_software development project 1\\assignment\\assignment 5\\comp231-002--team1-teamup-sportsbooking\\comp231-002--team1-teamup-sportsbooking\\models\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AA19832-D7D2-4BF6-B981-37B37C782E3B}|comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking.csproj|solutionrelative:comp231-002--team1-teamup-sportsbooking\\models\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AA19832-D7D2-4BF6-B981-37B37C782E3B}|comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking.csproj|d:\\centennial\\semester 5\\comp-231_software development project 1\\assignment\\assignment 5\\comp231-002--team1-teamup-sportsbooking\\comp231-002--team1-teamup-sportsbooking\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AA19832-D7D2-4BF6-B981-37B37C782E3B}|comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking.csproj|solutionrelative:comp231-002--team1-teamup-sportsbooking\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AA19832-D7D2-4BF6-B981-37B37C782E3B}|comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking.csproj|d:\\centennial\\semester 5\\comp-231_software development project 1\\assignment\\assignment 5\\comp231-002--team1-teamup-sportsbooking\\comp231-002--team1-teamup-sportsbooking\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AA19832-D7D2-4BF6-B981-37B37C782E3B}|comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking.csproj|solutionrelative:comp231-002--team1-teamup-sportsbooking\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AA19832-D7D2-4BF6-B981-37B37C782E3B}|comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking.csproj|d:\\centennial\\semester 5\\comp-231_software development project 1\\assignment\\assignment 5\\comp231-002--team1-teamup-sportsbooking\\comp231-002--team1-teamup-sportsbooking\\models\\court.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AA19832-D7D2-4BF6-B981-37B37C782E3B}|comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking.csproj|solutionrelative:comp231-002--team1-teamup-sportsbooking\\models\\court.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AA19832-D7D2-4BF6-B981-37B37C782E3B}|comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking.csproj|d:\\centennial\\semester 5\\comp-231_software development project 1\\assignment\\assignment 5\\comp231-002--team1-teamup-sportsbooking\\comp231-002--team1-teamup-sportsbooking\\models\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AA19832-D7D2-4BF6-B981-37B37C782E3B}|comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking.csproj|solutionrelative:comp231-002--team1-teamup-sportsbooking\\models\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AA19832-D7D2-4BF6-B981-37B37C782E3B}|comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking.csproj|d:\\centennial\\semester 5\\comp-231_software development project 1\\assignment\\assignment 5\\comp231-002--team1-teamup-sportsbooking\\comp231-002--team1-teamup-sportsbooking\\models\\team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AA19832-D7D2-4BF6-B981-37B37C782E3B}|comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking.csproj|solutionrelative:comp231-002--team1-teamup-sportsbooking\\models\\team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AA19832-D7D2-4BF6-B981-37B37C782E3B}|comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking.csproj|d:\\centennial\\semester 5\\comp-231_software development project 1\\assignment\\assignment 5\\comp231-002--team1-teamup-sportsbooking\\comp231-002--team1-teamup-sportsbooking\\controllers\\audiencecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AA19832-D7D2-4BF6-B981-37B37C782E3B}|comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking.csproj|solutionrelative:comp231-002--team1-teamup-sportsbooking\\controllers\\audiencecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AA19832-D7D2-4BF6-B981-37B37C782E3B}|comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking.csproj|d:\\centennial\\semester 5\\comp-231_software development project 1\\assignment\\assignment 5\\comp231-002--team1-teamup-sportsbooking\\comp231-002--team1-teamup-sportsbooking\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AA19832-D7D2-4BF6-B981-37B37C782E3B}|comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking.csproj|solutionrelative:comp231-002--team1-teamup-sportsbooking\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AA19832-D7D2-4BF6-B981-37B37C782E3B}|comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking.csproj|d:\\centennial\\semester 5\\comp-231_software development project 1\\assignment\\assignment 5\\comp231-002--team1-teamup-sportsbooking\\comp231-002--team1-teamup-sportsbooking\\controllers\\teamownercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AA19832-D7D2-4BF6-B981-37B37C782E3B}|comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking.csproj|solutionrelative:comp231-002--team1-teamup-sportsbooking\\controllers\\teamownercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AA19832-D7D2-4BF6-B981-37B37C782E3B}|comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking.csproj|d:\\centennial\\semester 5\\comp-231_software development project 1\\assignment\\assignment 5\\comp231-002--team1-teamup-sportsbooking\\comp231-002--team1-teamup-sportsbooking\\controllers\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AA19832-D7D2-4BF6-B981-37B37C782E3B}|comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking.csproj|solutionrelative:comp231-002--team1-teamup-sportsbooking\\controllers\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a83394e3-39c2-4678-a3c8-364b69d78fd3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Admin.cs",
+              "DocumentMoniker": "D:\\Centennial\\Semester 5\\COMP-231_Software Development Project 1\\Assignment\\Assignment 5\\comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking\\Views\\Admin.cs",
+              "RelativeDocumentMoniker": "comp231-002--Team1-TeamUp-SportsBooking\\Views\\Admin.cs",
+              "ToolTip": "D:\\Centennial\\Semester 5\\COMP-231_Software Development Project 1\\Assignment\\Assignment 5\\comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking\\Views\\Admin.cs",
+              "RelativeToolTip": "comp231-002--Team1-TeamUp-SportsBooking\\Views\\Admin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T23:52:11.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Audience.cs",
+              "DocumentMoniker": "D:\\Centennial\\Semester 5\\COMP-231_Software Development Project 1\\Assignment\\Assignment 5\\comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking\\Views\\Audience.cs",
+              "RelativeDocumentMoniker": "comp231-002--Team1-TeamUp-SportsBooking\\Views\\Audience.cs",
+              "ToolTip": "D:\\Centennial\\Semester 5\\COMP-231_Software Development Project 1\\Assignment\\Assignment 5\\comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking\\Views\\Audience.cs",
+              "RelativeToolTip": "comp231-002--Team1-TeamUp-SportsBooking\\Views\\Audience.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T23:51:37.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TeamOwner.cs",
+              "DocumentMoniker": "D:\\Centennial\\Semester 5\\COMP-231_Software Development Project 1\\Assignment\\Assignment 5\\comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking\\Views\\TeamOwner.cs",
+              "RelativeDocumentMoniker": "comp231-002--Team1-TeamUp-SportsBooking\\Views\\TeamOwner.cs",
+              "ToolTip": "D:\\Centennial\\Semester 5\\COMP-231_Software Development Project 1\\Assignment\\Assignment 5\\comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking\\Views\\TeamOwner.cs",
+              "RelativeToolTip": "comp231-002--Team1-TeamUp-SportsBooking\\Views\\TeamOwner.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T23:51:28.15Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Player.cs",
+              "DocumentMoniker": "D:\\Centennial\\Semester 5\\COMP-231_Software Development Project 1\\Assignment\\Assignment 5\\comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking\\Views\\Player.cs",
+              "RelativeDocumentMoniker": "comp231-002--Team1-TeamUp-SportsBooking\\Views\\Player.cs",
+              "ToolTip": "D:\\Centennial\\Semester 5\\COMP-231_Software Development Project 1\\Assignment\\Assignment 5\\comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking\\Views\\Player.cs",
+              "RelativeToolTip": "comp231-002--Team1-TeamUp-SportsBooking\\Views\\Player.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T23:51:20.667Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\Centennial\\Semester 5\\COMP-231_Software Development Project 1\\Assignment\\Assignment 5\\comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "comp231-002--Team1-TeamUp-SportsBooking\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\Centennial\\Semester 5\\COMP-231_Software Development Project 1\\Assignment\\Assignment 5\\comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "comp231-002--Team1-TeamUp-SportsBooking\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T23:47:10.856Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Booking.cs",
+              "DocumentMoniker": "D:\\Centennial\\Semester 5\\COMP-231_Software Development Project 1\\Assignment\\Assignment 5\\comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking\\Models\\Booking.cs",
+              "RelativeDocumentMoniker": "comp231-002--Team1-TeamUp-SportsBooking\\Models\\Booking.cs",
+              "ToolTip": "D:\\Centennial\\Semester 5\\COMP-231_Software Development Project 1\\Assignment\\Assignment 5\\comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking\\Models\\Booking.cs",
+              "RelativeToolTip": "comp231-002--Team1-TeamUp-SportsBooking\\Models\\Booking.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T23:46:44.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Court.cs",
+              "DocumentMoniker": "D:\\Centennial\\Semester 5\\COMP-231_Software Development Project 1\\Assignment\\Assignment 5\\comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking\\Models\\Court.cs",
+              "RelativeDocumentMoniker": "comp231-002--Team1-TeamUp-SportsBooking\\Models\\Court.cs",
+              "ToolTip": "D:\\Centennial\\Semester 5\\COMP-231_Software Development Project 1\\Assignment\\Assignment 5\\comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking\\Models\\Court.cs",
+              "RelativeToolTip": "comp231-002--Team1-TeamUp-SportsBooking\\Models\\Court.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T23:46:36.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Player.cs",
+              "DocumentMoniker": "D:\\Centennial\\Semester 5\\COMP-231_Software Development Project 1\\Assignment\\Assignment 5\\comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking\\Models\\Player.cs",
+              "RelativeDocumentMoniker": "comp231-002--Team1-TeamUp-SportsBooking\\Models\\Player.cs",
+              "ToolTip": "D:\\Centennial\\Semester 5\\COMP-231_Software Development Project 1\\Assignment\\Assignment 5\\comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking\\Models\\Player.cs",
+              "RelativeToolTip": "comp231-002--Team1-TeamUp-SportsBooking\\Models\\Player.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T23:46:09.44Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Game.cs",
+              "DocumentMoniker": "D:\\Centennial\\Semester 5\\COMP-231_Software Development Project 1\\Assignment\\Assignment 5\\comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking\\Models\\Game.cs",
+              "RelativeDocumentMoniker": "comp231-002--Team1-TeamUp-SportsBooking\\Models\\Game.cs",
+              "ToolTip": "D:\\Centennial\\Semester 5\\COMP-231_Software Development Project 1\\Assignment\\Assignment 5\\comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking\\Models\\Game.cs",
+              "RelativeToolTip": "comp231-002--Team1-TeamUp-SportsBooking\\Models\\Game.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T23:46:28.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Team.cs",
+              "DocumentMoniker": "D:\\Centennial\\Semester 5\\COMP-231_Software Development Project 1\\Assignment\\Assignment 5\\comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking\\Models\\Team.cs",
+              "RelativeDocumentMoniker": "comp231-002--Team1-TeamUp-SportsBooking\\Models\\Team.cs",
+              "ToolTip": "D:\\Centennial\\Semester 5\\COMP-231_Software Development Project 1\\Assignment\\Assignment 5\\comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking\\Models\\Team.cs",
+              "RelativeToolTip": "comp231-002--Team1-TeamUp-SportsBooking\\Models\\Team.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T23:46:18.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AudienceController.cs",
+              "DocumentMoniker": "D:\\Centennial\\Semester 5\\COMP-231_Software Development Project 1\\Assignment\\Assignment 5\\comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking\\Controllers\\AudienceController.cs",
+              "RelativeDocumentMoniker": "comp231-002--Team1-TeamUp-SportsBooking\\Controllers\\AudienceController.cs",
+              "ToolTip": "D:\\Centennial\\Semester 5\\COMP-231_Software Development Project 1\\Assignment\\Assignment 5\\comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking\\Controllers\\AudienceController.cs",
+              "RelativeToolTip": "comp231-002--Team1-TeamUp-SportsBooking\\Controllers\\AudienceController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T23:45:50.656Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\Centennial\\Semester 5\\COMP-231_Software Development Project 1\\Assignment\\Assignment 5\\comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "comp231-002--Team1-TeamUp-SportsBooking\\Controllers\\AdminController.cs",
+              "ToolTip": "D:\\Centennial\\Semester 5\\COMP-231_Software Development Project 1\\Assignment\\Assignment 5\\comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "comp231-002--Team1-TeamUp-SportsBooking\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T23:45:36.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "TeamOwnerController.cs",
+              "DocumentMoniker": "D:\\Centennial\\Semester 5\\COMP-231_Software Development Project 1\\Assignment\\Assignment 5\\comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking\\Controllers\\TeamOwnerController.cs",
+              "RelativeDocumentMoniker": "comp231-002--Team1-TeamUp-SportsBooking\\Controllers\\TeamOwnerController.cs",
+              "ToolTip": "D:\\Centennial\\Semester 5\\COMP-231_Software Development Project 1\\Assignment\\Assignment 5\\comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking\\Controllers\\TeamOwnerController.cs",
+              "RelativeToolTip": "comp231-002--Team1-TeamUp-SportsBooking\\Controllers\\TeamOwnerController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T23:45:08.253Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PlayerController.cs",
+              "DocumentMoniker": "D:\\Centennial\\Semester 5\\COMP-231_Software Development Project 1\\Assignment\\Assignment 5\\comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking\\Controllers\\PlayerController.cs",
+              "RelativeDocumentMoniker": "comp231-002--Team1-TeamUp-SportsBooking\\Controllers\\PlayerController.cs",
+              "ToolTip": "D:\\Centennial\\Semester 5\\COMP-231_Software Development Project 1\\Assignment\\Assignment 5\\comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking\\Controllers\\PlayerController.cs",
+              "RelativeToolTip": "comp231-002--Team1-TeamUp-SportsBooking\\Controllers\\PlayerController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T23:44:53.447Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
