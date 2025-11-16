@@ -2,5 +2,7 @@
 {
     public class Game
     {
+        public int Id { get; set; }
+        public DateTime StartTime { get; set; }
     }
 }
