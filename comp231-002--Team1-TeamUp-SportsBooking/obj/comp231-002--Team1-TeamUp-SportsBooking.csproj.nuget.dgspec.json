@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Centennial\\Semester 5\\COMP-231_Software Development Project 1\\Assignment\\Assignment 5\\comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking.csproj": {}
+    "C:\\Users\\taz30\\Source\\Repos\\comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking.csproj": {}
   },
   "projects": {
-    "D:\\Centennial\\Semester 5\\COMP-231_Software Development Project 1\\Assignment\\Assignment 5\\comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking.csproj": {
+    "C:\\Users\\taz30\\Source\\Repos\\comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Centennial\\Semester 5\\COMP-231_Software Development Project 1\\Assignment\\Assignment 5\\comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking.csproj",
+        "projectUniqueName": "C:\\Users\\taz30\\Source\\Repos\\comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking.csproj",
         "projectName": "comp231-002--Team1-TeamUp-SportsBooking",
-        "projectPath": "D:\\Centennial\\Semester 5\\COMP-231_Software Development Project 1\\Assignment\\Assignment 5\\comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking.csproj",
-        "packagesPath": "C:\\Users\\COHOTECH.VN\\.nuget\\packages\\",
-        "outputPath": "D:\\Centennial\\Semester 5\\COMP-231_Software Development Project 1\\Assignment\\Assignment 5\\comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking\\obj\\",
+        "projectPath": "C:\\Users\\taz30\\Source\\Repos\\comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking.csproj",
+        "packagesPath": "C:\\Users\\taz30\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\taz30\\Source\\Repos\\comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\COHOTECH.VN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\taz30\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -44,11 +45,31 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.16, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.16, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.16, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -68,7 +89,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
