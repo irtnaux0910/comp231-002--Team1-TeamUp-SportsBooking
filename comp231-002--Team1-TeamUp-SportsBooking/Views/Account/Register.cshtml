@@ -1,0 +1,99 @@
+@{
+    ViewData["Title"] = "Sign Up";
+}
+
+<section class="auth-page">
+    <div class="auth-card auth-card-grid">
+
+        <!-- LEFT: registration form-->
+        <div class="auth-card-left">
+            <h1 class="h3 fw-semibold mb-3">
+                Create your TeamUp account 🏃‍♀️
+            </h1>
+
+            <p class="text-soft mb-4">
+                One account to book courts, join games, and manage your teams.
+            </p>
+
+            <form asp-controller="Account" asp-action="Register" method="post" class="mt-3">
+
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label class="form-label" for="FirstName">First name</label>
+                        <input id="FirstName" name="firstName" class="form-control" placeholder="Daria" />
+                    </div>
+
+                    <div class="col-md-6">
+                        <label class="form-label" for="LastName">Last name</label>
+                        <input id="LastName" name="lastName" class="form-control" placeholder="Ivanova" />
+                    </div>
+                </div>
+
+                <div class="mt-3 mb-3">
+                    <label class="form-label" for="Email">Email</label>
+                    <input id="Email" name="email" type="email" class="form-control" placeholder="you@example.com" />
+                </div>
+
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label class="form-label" for="Password">Password</label>
+                        <input id="Password" name="password" type="password" class="form-control" placeholder="••••••••" />
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label" for="ConfirmPassword">Confirm</label>
+                        <input id="ConfirmPassword" name="confirmPassword" type="password" class="form-control" placeholder="••••••••" />
+                    </div>
+                </div>
+
+                <div class="mt-3 mb-3">
+                    <label class="form-label" for="Role">Role</label>
+                    <select id="Role" name="role" class="form-select">
+                        <option value="">Select your role</option>
+                        <option value="Player">Player</option>
+                        <option value="TeamOwner">Team Owner</option>
+                        <option value="Audience">Audience</option>
+                    </select>
+                    <div class="small text-soft mt-1">
+                        You can change this later in settings.
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-primary-teamup w-100 mt-2">
+                    Create account
+                </button>
+            </form>
+
+            <p class="mt-4 small text-soft">
+                Already have an account?
+                <a asp-controller="Account" asp-action="Login">Sign in</a>
+            </p>
+        </div>
+
+        <!-- RIGHT: A mini explanation of the value -->
+        <div class="auth-card-right">
+            <h2 class="h5 fw-semibold mb-3">Why TeamUp?</h2>
+
+            <div class="d-flex flex-column gap-3 small">
+                <div class="card-teamup">
+                    <div class="card-teamup-header">
+                        <div class="card-teamup-title">All your games in one place</div>
+                    </div>
+                    <p class="text-soft mb-0">
+                        No more lost messages in group chats. See upcoming matches,
+                        courts, and teammates in a single schedule.
+                    </p>
+                </div>
+
+                <div class="card-teamup">
+                    <div class="card-teamup-header">
+                        <div class="card-teamup-title">Smarter court booking</div>
+                    </div>
+                    <p class="text-soft mb-0">
+                        Find available courts, compare times, and book directly
+                        without 20 messages back and forth.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

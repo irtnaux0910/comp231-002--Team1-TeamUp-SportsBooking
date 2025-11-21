@@ -1,0 +1,179 @@
+@{
+    ViewData["Title"] = "My profile";
+}
+
+<main class="main-container">
+
+    <!-- HEADER + PROFILE CARD (Instagram-style) -->
+    <section class="card-teamup profile-card">
+
+        <div class="profile-header">
+
+    <!-- Avatar -->
+    <div class="profile-avatar">
+        <span class="profile-avatar-initials">DA</span>
+    </div>
+
+    <!-- Name + bio -->
+    <div class="profile-main">
+        <div class="profile-row-top">
+            <div class="profile-title-block">
+                <h1 class="profile-name mb-0">Daria Ivanova</h1>
+                <span class="profile-handle">daria_plays</span>
+            </div>
+        </div>
+
+        <div class="profile-sports-row">
+            <span class="chip chip-active">Tennis</span>
+            <span class="chip">Basketball</span>
+            <span class="chip">Badminton</span>
+        </div>
+
+        <p class="profile-bio">
+            Plays evenings after 6 PM, prefers semi-competitive games and mixed doubles.
+            Loves trying new courts across the city.
+        </p>
+
+        <div class="profile-meta small">
+            <span>Joined · 2024</span>
+            <span>Home area · North Toronto</span>
+        </div>
+    </div>
+
+    <!-- Actions -->
+    <div class="profile-actions">
+        <button class="btn-primary-teamup profile-action-btn">
+            Edit profile
+        </button>
+        <button class="btn-secondary-teamup profile-action-btn">
+            Manage notifications
+        </button>
+        <button class="btn-secondary-teamup profile-action-btn">
+            Sign out
+        </button>
+    </div>
+</div>
+
+
+        <!-- Stats row -->
+        <div class="profile-stats mt-3">
+            <div class="profile-stat">
+                <div class="profile-stat-value">42</div>
+                <div class="profile-stat-label">Games played</div>
+            </div>
+            <div class="profile-stat">
+                <div class="profile-stat-value">61%</div>
+                <div class="profile-stat-label">Win rate</div>
+            </div>
+            <div class="profile-stat">
+                <div class="profile-stat-value">28</div>
+                <div class="profile-stat-label">Court bookings</div>
+            </div>
+            <div class="profile-stat">
+                <div class="profile-stat-value">74 h</div>
+                <div class="profile-stat-label">Time on court</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOWER GRID: preferences + notifications -->
+    <section class="dashboard-layout mt-3">
+
+        <!-- LEFT: Preferences -->
+        <div class="dashboard-main">
+            <div class="card-teamup">
+                <div class="card-teamup-header">
+                    <div>
+                        <div class="card-teamup-title">Playing preferences</div>
+                        <div class="card-teamup-meta">
+                            These settings help us suggest better games and courts.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="small mt-2 profile-preferences-grid">
+                    <div>
+                        <div class="stat-label">Usual days</div>
+                        <div class="profile-preference-value">
+                            Weekdays · Tue / Thu
+                        </div>
+                    </div>
+                    <div>
+                        <div class="stat-label">Usual time</div>
+                        <div class="profile-preference-value">
+                            18:00 – 22:00
+                        </div>
+                    </div>
+                    <div>
+                        <div class="stat-label">Preferred level</div>
+                        <div class="profile-preference-value">
+                            Semi-competitive
+                        </div>
+                    </div>
+                    <div>
+                        <div class="stat-label">Match types</div>
+                        <div class="profile-preference-value">
+                            Pickup games, fixed teams, doubles
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- RIGHT: Notification settings -->
+        <aside class="dashboard-side">
+            <div class="card-teamup">
+                <div class="card-teamup-header">
+                    <div class="card-teamup-title">Notifications</div>
+                </div>
+
+                <div class="small d-flex flex-column gap-2 mt-1">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <div>Game reminders</div>
+                            <div class="text-soft">
+                                2 hours before game, plus same-day reminder.
+                            </div>
+                        </div>
+                        <span class="badge-green">On</span>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <div>New game suggestions</div>
+                            <div class="text-soft">
+                                When a game matches your sport and level.
+                            </div>
+                        </div>
+                        <span class="badge-soft">On</span>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <div>Team messages</div>
+                            <div class="text-soft">
+                                Messages from team owners and captains.
+                            </div>
+                        </div>
+                        <span class="badge-green">On</span>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <div>Marketing & updates</div>
+                            <div class="text-soft">
+                                Product updates, offers, and experiments.
+                            </div>
+                        </div>
+                        <span class="badge-soft">Off</span>
+                    </div>
+                </div>
+
+                <p class="small text-soft mt-3 mb-0">
+                    Later, the backend will be able to read/change these settings from the table.
+                    notifications. Right now it's just a UI framework.
+                </p>
+            </div>
+        </aside>
+    </section>
+</main>

@@ -8,5 +8,9 @@ namespace comp231_002__Team1_TeamUp_SportsBooking.Controllers
         {
             return View();
         }
+
+        // Stubs for future action games
+        public IActionResult CreateMatch() => View();
+        public IActionResult ManageRoster() => View();
     }
 }

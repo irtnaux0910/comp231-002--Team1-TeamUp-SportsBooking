@@ -1,0 +1,185 @@
+@{
+    ViewData["Title"] = "Game details";
+}
+
+<main class="main-container">
+
+    <!-- HEADER -->
+    <header class="section-header">
+        <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
+            <div>
+                <div class="teamup-pill mb-2">
+                    GAME DETAILS
+                </div>
+                <h1 class="section-title">
+                    Hoop Squad vs Net Masters
+                </h1>
+                <p class="section-subtitle">
+                    Downtown Sports Complex · Court 2 · Saturday · 19:00 – 20:30
+                </p>
+            </div>
+
+            <div class="d-flex flex-wrap gap-2 justify-content-end">
+                <button class="btn-primary-teamup">
+                    Join game
+                </button>
+                <button class="btn-secondary-teamup">
+                    Share link
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN GRID -->
+    <section class="dashboard-layout">
+
+        <!-- LEFT COLUMN: game info -->
+        <div class="dashboard-main">
+
+            <!-- Match summary -->
+            <div class="card-teamup">
+                <div class="card-teamup-header">
+                    <div>
+                        <div class="card-teamup-title">Match overview</div>
+                        <div class="card-teamup-meta">
+                            Semi-competitive · full-court · scoreboard enabled.
+                        </div>
+                    </div>
+                    <span class="badge-soft">ID: #G-2048</span>
+                </div>
+
+                <div class="stat-grid small">
+                    <div class="stat-card">
+                        <div class="stat-label">Sport</div>
+                        <div class="stat-value">Basketball</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">Spots</div>
+                        <div class="stat-value">8 / 10</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">Level</div>
+                        <div class="stat-value">Semi-competitive</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">Status</div>
+                        <div class="stat-value text-accent">Open</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lineups -->
+            <div class="card-teamup">
+                <div class="card-teamup-header">
+                    <div>
+                        <div class="card-teamup-title">Lineups</div>
+                        <div class="card-teamup-meta">
+                            See who’s already in and which positions are still free.
+                        </div>
+                    </div>
+                    <span class="badge-soft">10 players max</span>
+                </div>
+
+                <div class="lineup-grid small">
+                    <div>
+                        <div class="lineup-team-name">Hoop Squad</div>
+                        <ul class="lineup-list">
+                            <li class="lineup-player">
+                                <span>Alex Chen</span>
+                                <span class="tag-pill">PG</span>
+                            </li>
+                            <li class="lineup-player">
+                                <span>Maria Lopez</span>
+                                <span class="tag-pill">SG</span>
+                            </li>
+                            <li class="lineup-player">
+                                <span>Jason Park</span>
+                                <span class="tag-pill">C</span>
+                            </li>
+                            <li class="lineup-player lineup-player-empty">
+                                <span>Open spot</span>
+                                <span class="tag-pill">Any</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <div class="lineup-team-name">Net Masters</div>
+                        <ul class="lineup-list">
+                            <li class="lineup-player">
+                                <span>Emily Chen</span>
+                                <span class="tag-pill">SF</span>
+                            </li>
+                            <li class="lineup-player">
+                                <span>David Kim</span>
+                                <span class="tag-pill">PF</span>
+                            </li>
+                            <li class="lineup-player lineup-player-empty">
+                                <span>Open spot</span>
+                                <span class="tag-pill">Any</span>
+                            </li>
+                            <li class="lineup-player lineup-player-empty">
+                                <span>Open spot</span>
+                                <span class="tag-pill">Any</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- RIGHT COLUMN: court + actions -->
+        <aside class="dashboard-side">
+
+            <!-- Court info -->
+            <div class="card-teamup">
+                <div class="card-teamup-header">
+                    <div class="card-teamup-title">Court & facility</div>
+                    <span class="badge-soft">Downtown Sports Complex</span>
+                </div>
+
+                <ul class="admin-list small mt-1">
+                    <li class="admin-list-item">
+                        <span>Court 2 · full-size</span>
+                        <span class="tag-pill">Indoor</span>
+                    </li>
+                    <li class="admin-list-item">
+                        <span>Lights · scoreboard · benches</span>
+                        <span class="tag-pill">Equipment</span>
+                    </li>
+                    <li class="admin-list-item">
+                        <span>Showers · lockers · parking</span>
+                        <span class="tag-pill">Amenities</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Your status / actions -->
+            <div class="card-teamup">
+                <div class="card-teamup-header">
+                    <div class="card-teamup-title">Your status</div>
+                    <span class="badge-green">Not joined yet</span>
+                </div>
+
+                <p class="small text-soft mb-3">
+                    Once you join, other players will see your name in the lineup and
+                    the team owner will be notified automatically.
+                </p>
+
+                <div class="d-flex flex-column gap-2 small">
+                    <button class="btn-primary-teamup w-100">
+                        Join this game
+                    </button>
+                    <button class="btn-secondary-teamup w-100">
+                        Save for later
+                    </button>
+                    <button class="btn-secondary-teamup w-100">
+                        Report an issue
+                    </button>
+                </div>
+            </div>
+
+        </aside>
+    </section>
+</main>

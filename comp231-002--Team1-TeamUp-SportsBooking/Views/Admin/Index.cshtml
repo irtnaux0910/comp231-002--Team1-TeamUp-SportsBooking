@@ -1,0 +1,168 @@
+@{
+    ViewData["Title"] = "Admin Dashboard";
+}
+
+<main class="main-container">
+
+    <!-- HEADER -->
+    <header class="section-header">
+        <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
+            <div>
+                <div class="teamup-pill mb-2">
+                    ADMIN CONSOLE
+                </div>
+                <h1 class="section-title">
+                    Keep the whole platform running smooth.
+                </h1>
+                <p class="section-subtitle">
+                    Monitor players, teams, courts, and bookings from one clean overview.
+                </p>
+            </div>
+
+            <div class="d-flex flex-wrap gap-2 justify-content-end">
+                <a asp-controller="Admin" asp-action="Users" class="btn-secondary-teamup">
+                    Manage users
+                </a>
+                <a asp-controller="Admin" asp-action="Courts" class="btn-secondary-teamup">
+                    Manage courts
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN GRID -->
+    <section class="dashboard-layout">
+
+        <!-- LEFT COLUMN -->
+        <div class="dashboard-main">
+
+            <!-- Platform stats -->
+            <div class="card-teamup">
+                <div class="card-teamup-header">
+                    <div>
+                        <div class="card-teamup-title">Platform overview</div>
+                        <div class="card-teamup-meta">
+                            Live snapshot of activity across TeamUp.
+                        </div>
+                    </div>
+                    <span class="badge-soft">Last 24 hours</span>
+                </div>
+
+                <div class="stat-grid small">
+                    <div class="stat-card">
+                        <div class="stat-label">Registered players</div>
+                        <div class="stat-value">124</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">Teams</div>
+                        <div class="stat-value">18</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">Active courts</div>
+                        <div class="stat-value">12</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">Games today</div>
+                        <div class="stat-value">9</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent bookings -->
+            <div class="card-teamup">
+                <div class="card-teamup-header">
+                    <div>
+                        <div class="card-teamup-title">Recent bookings</div>
+                        <div class="card-teamup-meta">
+                            Last changes made by players and team owners.
+                        </div>
+                    </div>
+                    <span class="badge-soft">Most recent 5</span>
+                </div>
+
+                <ul class="admin-list small mt-1">
+                    <li class="admin-list-item">
+                        <span>John Smith booked Court 1 · 19:00–20:00</span>
+                        <span class="tag-pill">Tennis</span>
+                    </li>
+                    <li class="admin-list-item">
+                        <span>Hoop Squad reserved Gym 3 · 21:00–22:30</span>
+                        <span class="tag-pill">Basketball</span>
+                    </li>
+                    <li class="admin-list-item">
+                        <span>Goal Diggers cancelled Field 2 booking</span>
+                        <span class="tag-pill">Cancelled</span>
+                    </li>
+                    <li class="admin-list-item">
+                        <span>Emily Chen updated player availability</span>
+                        <span class="tag-pill">Roster</span>
+                    </li>
+                    <li class="admin-list-item">
+                        <span>New court added: Unionville Rec Center</span>
+                        <span class="tag-pill">New court</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <aside class="dashboard-side">
+
+            <!-- Pending items -->
+            <div class="card-teamup">
+                <div class="card-teamup-header">
+                    <div class="card-teamup-title">Pending approvals</div>
+                    <span class="badge-soft">3 items</span>
+                </div>
+
+                <ul class="admin-list small mt-1">
+                    <li class="admin-list-item">
+                        <span>New team request: “Downtown Strikers”</span>
+                        <div class="d-flex gap-1">
+                            <button class="btn-secondary-teamup btn-sm">Approve</button>
+                            <button class="btn-secondary-teamup btn-sm">Reject</button>
+                        </div>
+                    </li>
+                    <li class="admin-list-item">
+                        <span>New court: “Community Gym 4”</span>
+                        <div class="d-flex gap-1">
+                            <button class="btn-secondary-teamup btn-sm">Review</button>
+                        </div>
+                    </li>
+                    <li class="admin-list-item">
+                        <span>Report: “Unsportsmanlike behaviour”</span>
+                        <div class="d-flex gap-1">
+                            <button class="btn-secondary-teamup btn-sm">Open</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Quick admin actions -->
+            <div class="card-teamup">
+                <div class="card-teamup-header">
+                    <div class="card-teamup-title">Quick actions</div>
+                </div>
+
+                <div class="d-flex flex-column gap-2 small mt-1">
+                    <button class="btn-primary-teamup w-100">
+                        Create new court
+                    </button>
+                    <button class="btn-secondary-teamup w-100">
+                        View all bookings
+                    </button>
+                    <button class="btn-secondary-teamup w-100">
+                        Export activity report
+                    </button>
+                </div>
+
+                <p class="text-soft small mt-3 mb-0">
+                    Later these buttons can be wired to actual Admin controller actions
+                    for courts, bookings, and reporting.
+                </p>
+            </div>
+
+        </aside>
+    </section>
+</main>
