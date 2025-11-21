@@ -4180,32 +4180,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\taz30\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "/Users/dasaivanova/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\taz30\\Source\\Repos\\comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking.csproj",
+      "projectUniqueName": "/Users/dasaivanova/comp231-002--Team1-TeamUp-SportsBooking/comp231-002--Team1-TeamUp-SportsBooking/comp231-002--Team1-TeamUp-SportsBooking.csproj",
       "projectName": "comp231-002--Team1-TeamUp-SportsBooking",
-      "projectPath": "C:\\Users\\taz30\\Source\\Repos\\comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking.csproj",
-      "packagesPath": "C:\\Users\\taz30\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\taz30\\Source\\Repos\\comp231-002--Team1-TeamUp-SportsBooking\\comp231-002--Team1-TeamUp-SportsBooking\\obj\\",
+      "projectPath": "/Users/dasaivanova/comp231-002--Team1-TeamUp-SportsBooking/comp231-002--Team1-TeamUp-SportsBooking/comp231-002--Team1-TeamUp-SportsBooking.csproj",
+      "packagesPath": "/Users/dasaivanova/.nuget/packages/",
+      "outputPath": "/Users/dasaivanova/comp231-002--Team1-TeamUp-SportsBooking/comp231-002--Team1-TeamUp-SportsBooking/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\taz30\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/dasaivanova/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4223,8 +4215,7 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.100"
+      }
     },
     "frameworks": {
       "net8.0": {
@@ -4268,7 +4259,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.416/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

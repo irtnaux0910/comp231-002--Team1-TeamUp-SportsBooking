@@ -1,0 +1,51 @@
+@{
+    ViewData["Title"] = "Edit court";
+}
+
+<main class="main-container">
+
+<section class="card-teamup" style="max-width: 580px; margin: 0 auto;">
+
+    <div class="card-teamup-header">
+        <h2 class="section-title">Edit court</h2>
+    </div>
+
+    <form method="post" class="small">
+
+        <div class="form-group mb-3">
+            <label class="form-label-teamup">Location</label>
+            <input type="text" class="form-control-teamup" required />
+        </div>
+
+        <div class="form-group mb-3">
+            <label class="form-label-teamup">Surface type</label>
+            <select class="form-control-teamup" required>
+                <option>Hard</option>
+                <option>Grass</option>
+                <option>Clay</option>
+                <option>Indoor</option>
+            </select>
+        </div>
+
+        <div class="form-group mb-3">
+            <label class="form-label-teamup">Availability</label>
+            <select class="form-control-teamup">
+                <option>Available</option>
+                <option>Not available</option>
+            </select>
+        </div>
+
+        <div class="form-group mb-4">
+            <label class="form-label-teamup">Notes</label>
+            <textarea class="form-control-teamup" rows="3"></textarea>
+        </div>
+
+        <button class="btn-primary-teamup w-100 mb-2">Save changes</button>
+        <a asp-controller="Admin" asp-action="Index"
+           class="btn-secondary-teamup w-100">Cancel</a>
+
+    </form>
+
+</section>
+
+</main>

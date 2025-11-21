@@ -1,0 +1,178 @@
+@{
+    ViewData["Title"] = "Team Owner Dashboard";
+}
+
+<main class="main-container">
+
+    <!-- HEADER -->
+    <header class="section-header">
+        <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
+            <div>
+                <div class="teamup-pill mb-2">
+                    TEAM OWNER
+                </div>
+                <h1 class="section-title">
+                    Manage your team like a pro.
+                </h1>
+                <p class="section-subtitle">
+                    See your next match, roster, and training schedule in one clean view.
+                </p>
+            </div>
+
+            <div class="d-flex flex-wrap gap-2 justify-content-end">
+                <a asp-controller="TeamOwner" asp-action="CreateMatch" class="btn-primary-teamup">
+                    Create match
+                </a>
+                <a asp-controller="TeamOwner" asp-action="ManageRoster" class="btn-secondary-teamup">
+                    Manage roster
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN GRID -->
+    <section class="dashboard-layout">
+
+        <!-- LEFT COLUMN -->
+        <div class="dashboard-main">
+
+            <!-- Next match -->
+            <div class="card-teamup">
+                <div class="card-teamup-header">
+                    <div>
+                        <div class="card-teamup-title">Next match</div>
+                        <div class="card-teamup-meta">
+                            Make sure everyone is confirmed and the court is booked.
+                        </div>
+                    </div>
+                    <span class="badge-soft">Saturday · 19:00</span>
+                </div>
+
+                <div class="d-flex flex-column gap-2 small">
+
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <div class="game-row-title">Hoop Squad vs Net Masters</div>
+                            <div class="game-row-meta">
+                                Downtown Sports Complex · Court 2
+                            </div>
+                        </div>
+                        <span class="badge-green">Confirmed</span>
+                    </div>
+
+                    <div class="d-flex justify-content-between text-soft">
+                        <span>10/10 players ready</span>
+                        <span>Ref assigned · Scorekeeping enabled</span>
+                    </div>
+
+                    <div class="d-flex gap-2 mt-2">
+                        <button class="btn-secondary-teamup btn-sm">
+                            Edit match
+                        </button>
+                        <button class="btn-secondary-teamup btn-sm">
+                            Share link
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Roster overview -->
+            <div class="card-teamup">
+                <div class="card-teamup-header">
+                    <div>
+                        <div class="card-teamup-title">Roster overview</div>
+                        <div class="card-teamup-meta">
+                            See who’s active, injured, or missing for upcoming games.
+                        </div>
+                    </div>
+                    <span class="badge-soft">Main team · 12 players</span>
+                </div>
+
+                <ul class="admin-list small mt-1">
+                    <li class="admin-list-item">
+                        <span>Alex Chen · Point Guard</span>
+                        <span class="badge-green">Available</span>
+                    </li>
+                    <li class="admin-list-item">
+                        <span>Maria Lopez · Shooting Guard</span>
+                        <span class="tag-pill">Limited · knee</span>
+                    </li>
+                    <li class="admin-list-item">
+                        <span>Jason Park · Center</span>
+                        <span class="tag-pill">Out · travel</span>
+                    </li>
+                    <li class="admin-list-item">
+                        <span>+ 9 more players</span>
+                        <button class="btn-secondary-teamup btn-sm">
+                            View full roster
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <aside class="dashboard-side">
+
+            <!-- Stats -->
+            <div class="card-teamup">
+                <div class="card-teamup-header">
+                    <div class="card-teamup-title">Team stats</div>
+                </div>
+
+                <div class="stat-grid small">
+                    <div class="stat-card">
+                        <div class="stat-label">Games this month</div>
+                        <div class="stat-value">6</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">Win rate</div>
+                        <div class="stat-value">67%</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">Players active</div>
+                        <div class="stat-value">10/12</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">Training sessions</div>
+                        <div class="stat-value">3</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Training schedule -->
+            <div class="card-teamup">
+                <div class="card-teamup-header">
+                    <div class="card-teamup-title">Upcoming training</div>
+                    <span class="badge-soft">Next 2 weeks</span>
+                </div>
+
+                <ul class="admin-list small mt-1">
+                    <li class="admin-list-item">
+                        <span>Mon · 19:30 · Community Gym 1</span>
+                        <span class="tag-pill">Conditioning</span>
+                    </li>
+                    <li class="admin-list-item">
+                        <span>Thu · 20:00 · Downtown Court B</span>
+                        <span class="tag-pill">Scrimmage</span>
+                    </li>
+                    <li class="admin-list-item">
+                        <span>Sun · 18:00 · Outdoor Field</span>
+                        <span class="tag-pill">Tactics</span>
+                    </li>
+                </ul>
+
+                <div class="d-flex flex-column gap-2 small mt-3">
+                    <button class="btn-primary-teamup w-100">
+                        Schedule new training
+                    </button>
+                    <button class="btn-secondary-teamup w-100">
+                        Share training calendar
+                    </button>
+                </div>
+            </div>
+
+        </aside>
+    </section>
+</main>

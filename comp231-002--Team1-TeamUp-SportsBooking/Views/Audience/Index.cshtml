@@ -1,0 +1,104 @@
+@{
+    ViewData["Title"] = "Games to watch";
+}
+
+<main class="main-container">
+
+    <!-- HEADER -->
+    <header class="section-header">
+        <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
+            <div>
+                <div class="teamup-pill mb-2">
+                    SPECTATOR MODE
+                </div>
+                <h1 class="section-title">
+                    Games you can watch live.
+                </h1>
+                <p class="section-subtitle">
+                    Find nearby games with friends playing, high-level matches, or new courts to explore.
+                </p>
+            </div>
+
+            <div class="d-flex flex-wrap gap-2 justify-content-end">
+                <button class="btn-secondary-teamup">
+                    Within 10 km
+                </button>
+                <button class="btn-secondary-teamup">
+                    Tonight
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- GRID OF GAMES -->
+    <section class="spectator-grid">
+
+        <article class="spectator-card">
+            <div class="spectator-card-header">
+                <div>
+                    <div class="spectator-location">Unionville Rec Center</div>
+                    <div class="spectator-title">Badminton · Casual league</div>
+                </div>
+                <span class="badge-soft">Tonight · 18:30</span>
+            </div>
+
+            <div class="spectator-meta">
+                <span>2 courts in use</span>
+                <span>Friends playing: 2</span>
+            </div>
+
+            <div class="spectator-footer">
+                <span class="text-soft small">Good viewing spots near Court 3.</span>
+                <button class="btn-secondary-teamup btn-sm">
+                    View lobby
+                </button>
+            </div>
+        </article>
+
+        <article class="spectator-card">
+            <div class="spectator-card-header">
+                <div>
+                    <div class="spectator-location">Centennial Park Court B</div>
+                    <div class="spectator-title">Basketball · Semi-competitive</div>
+                </div>
+                <span class="badge-soft">Tomorrow · 20:00</span>
+            </div>
+
+            <div class="spectator-meta">
+                <span>Outdoor · lights</span>
+                <span>6 / 10 players joined</span>
+            </div>
+
+            <div class="spectator-footer">
+                <span class="text-soft small">Great spot for photos near the benches.</span>
+                <button class="btn-primary-teamup btn-sm">
+                    Join waiting list
+                </button>
+            </div>
+        </article>
+
+        <article class="spectator-card">
+            <div class="spectator-card-header">
+                <div>
+                    <div class="spectator-location">Downtown Sports Complex</div>
+                    <div class="spectator-title">Volleyball · Final match</div>
+                </div>
+                <span class="badge-soft">Saturday · 19:30</span>
+            </div>
+
+            <div class="spectator-meta">
+                <span>Indoor · full crowd expected</span>
+                <span>Team you follow: Spike Kings</span>
+            </div>
+
+            <div class="spectator-footer">
+                <span class="text-soft small">Arrive 15 minutes earlier to get seats.</span>
+                <button class="btn-secondary-teamup btn-sm">
+                    Add to calendar
+                </button>
+            </div>
+        </article>
+
+    </section>
+
+</main>
