@@ -1,0 +1,174 @@
+@{
+    ViewData["Title"] = "My games & bookings";
+}
+
+<main class="main-container">
+
+    <!-- HEADER -->
+    <header class="section-header">
+        <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
+            <div>
+                <div class="teamup-pill mb-2">
+                    MY SCHEDULE
+                </div>
+                <h1 class="section-title">
+                    Your games & court bookings.
+                </h1>
+                <p class="section-subtitle">
+                    See all your upcoming games, court reservations, and past matches in one place.
+                </p>
+            </div>
+
+            <div class="d-flex flex-wrap gap-2 justify-content-end">
+                <a asp-controller="Player" asp-action="Create" class="btn-primary-teamup">
+                    Book a new court
+                </a>
+                <a asp-controller="Courts" asp-action="Index" class="btn-secondary-teamup">
+                    Browse courts
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN GRID -->
+    <section class="dashboard-layout">
+
+        <!-- LEFT COLUMN: upcoming games -->
+        <div class="dashboard-main">
+
+            <!-- Tabs -->
+            <div class="card-teamup mb-3">
+                <div class="schedule-tabs">
+                    <button class="schedule-tab schedule-tab-active" type="button">
+                        Upcoming
+                    </button>
+                    <button class="schedule-tab" type="button">
+                        Past
+                    </button>
+                    <button class="schedule-tab" type="button">
+                        All
+                    </button>
+                </div>
+
+                <div class="schedule-list mt-2 small">
+
+                    <!-- item 1 -->
+                    <article class="schedule-item">
+                        <div class="schedule-main">
+                            <div class="schedule-title">Hoop Squad vs Net Masters</div>
+                            <div class="schedule-meta">
+                                Saturday · 19:00 – 20:30 · Downtown Sports Complex · Court 2
+                            </div>
+                        </div>
+                        <div class="schedule-side">
+                            <span class="badge-green mb-1">Game</span>
+                            <a asp-controller="Games" asp-action="Details" asp-route-id="1"
+                               class="btn-secondary-teamup btn-sm">
+                                View details
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- item 2 -->
+                    <article class="schedule-item">
+                        <div class="schedule-main">
+                            <div class="schedule-title">Court booking · Riverdale Courts</div>
+                            <div class="schedule-meta">
+                                Sunday · 16:00 – 17:00 · Clay · Tennis
+                            </div>
+                        </div>
+                        <div class="schedule-side">
+                            <span class="badge-soft mb-1">Court booking</span>
+                            <button class="btn-secondary-teamup btn-sm">
+                                Manage
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- item 3 -->
+                    <article class="schedule-item">
+                        <div class="schedule-main">
+                            <div class="schedule-title">Pickup game · Centennial Park Court A</div>
+                            <div class="schedule-meta">
+                                Tuesday · 21:30 – 22:30 · Outdoor · Basketball
+                            </div>
+                        </div>
+                        <div class="schedule-side">
+                            <span class="badge-soft mb-1">Joined</span>
+                            <button class="btn-secondary-teamup btn-sm">
+                                Leave game
+                            </button>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- RIGHT COLUMN: summary -->
+        <aside class="dashboard-side">
+
+            <!-- Stats -->
+            <div class="card-teamup mb-3">
+                <div class="card-teamup-header">
+                    <div class="card-teamup-title">This week</div>
+                </div>
+
+                <div class="stat-grid small">
+                    <div class="stat-card">
+                        <div class="stat-label">Games</div>
+                        <div class="stat-value">3</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">Court bookings</div>
+                        <div class="stat-value">2</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">Hours on court</div>
+                        <div class="stat-value">5.5</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">Win rate</div>
+                        <div class="stat-value">60%</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tips / empty state text -->
+            <div class="card-teamup">
+                <div class="card-teamup-header">
+                    <div class="card-teamup-title">How this page will work</div>
+                </div>
+
+                <p class="small text-soft mb-2">
+                    Later, this page can show live data from the database:
+                </p>
+
+                <ul class="small text-soft mb-3">
+                    <li>All games you have joined or created;</li>
+                    <li>Your court bookings with quick actions;</li>
+                    <li>Past matches history and results.</li>
+                </ul>
+
+                <p class="small text-soft mb-0">
+                    For now this is a static UI mock, so the team can plug in real data
+                    from Player and Booking tables when backend is ready.
+                </p>
+            </div>
+
+            <div class="empty-state mt-3 small">
+    <div class="empty-state-title">No games yet.</div>
+    <div class="empty-state-text">
+        Once you join or book a game, it will appear here. For now you
+        can browse available courts and suggested games.
+    </div>
+    <a class="btn-primary-teamup btn-sm" asp-controller="Courts" asp-action="Index">
+        Find your first game
+    </a>
+</div>
+
+
+        </aside>
+    </section>
+</main>

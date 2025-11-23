@@ -1,22 +1,1220 @@
+/* ===========================
+   TeamUp Design System
+   Black + White + Sport Green
+   =========================== */
+
+/* Reset и базовые настройки */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
 html {
-  font-size: 14px;
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
+    scroll-behavior: smooth;
 }
 
 body {
-  margin-bottom: 60px;
+    background: #000000;
+    color: #FFFFFF;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    min-height: 100vh;
+}
+
+/* Цветовые переменные */
+
+:root {
+    --teamup-bg: #000000;
+    --teamup-surface: #0D0D0D;
+    --teamup-surface-soft: #111111;
+    --teamup-text: #FFFFFF;
+    --teamup-text-muted: #B3B3B3;
+    --teamup-text-soft: #8B8B8B;
+
+    /* спортивный зелёный */
+    --teamup-accent: #00E65A;
+    --teamup-accent-dark: #00C449;
+
+    --teamup-border: rgba(255, 255, 255, 0.08);
+    --teamup-border-strong: rgba(255, 255, 255, 0.16);
+    --teamup-radius: 14px;
+    --teamup-radius-lg: 18px;
+    --teamup-radius-pill: 999px;
+    --teamup-shadow-soft: 0 18px 40px rgba(0, 0, 0, 0.9);
+}
+
+/* Базовая типографика и контейнеры */
+
+.main-container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem 3.5rem;
+}
+
+.section-header {
+    margin-bottom: 1.75rem;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+.section-subtitle {
+    margin-top: 0.35rem;
+    color: var(--teamup-text-muted);
+    font-size: 0.95rem;
+}
+
+.text-muted-soft {
+    color: var(--teamup-text-muted);
+}
+
+.text-soft {
+    color: var(--teamup-text-soft);
+}
+
+.text-accent {
+    color: var(--teamup-accent);
+}
+
+/* Ссылки */
+
+a {
+    color: var(--teamup-accent);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--teamup-accent-dark);
+    text-decoration: underline;
+}
+
+/* Навигация / header */
+
+.navbar-teamup {
+    background: rgba(0, 0, 0, 0.95);
+    border-bottom: 1px solid var(--teamup-border);
+    backdrop-filter: blur(18px);
+}
+
+.navbar-teamup .navbar-brand {
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.navbar-teamup .nav-link {
+    color: var(--teamup-text-soft);
+    font-size: 0.9rem;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.navbar-teamup .nav-link:hover,
+.navbar-teamup .nav-link.active {
+    color: var(--teamup-accent);
+}
+
+/* общий стиль nav (bootstrap override) */
+
+.teamup-nav {
+    background: #050505;
+    border-color: var(--teamup-border) !important;
+}
+
+.navbar-brand {
+    color: #f8f8f8;
+}
+
+.navbar-brand:hover {
+    color: var(--teamup-accent);
+}
+
+.nav-link {
+    color: var(--teamup-text-soft) !important;
+    font-size: 0.9rem;
+    position: relative;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: #f5f5f5 !important;
+}
+
+.nav-link.active {
+    color: #f5f5f5 !important;
+}
+
+.nav-link.active::after {
+    content: "";
+    position: absolute;
+    left: 0.6rem;
+    right: 0.6rem;
+    bottom: -0.2rem;
+    height: 2px;
+    border-radius: 999px;
+    background: var(--teamup-accent);
+}
+
+/* Маленький индикатор продукта */
+
+.teamup-pill {
+    padding: 3px 9px;
+    border-radius: 999px;
+    border: 1px solid rgba(0, 230, 90, 0.65);
+    background: rgba(0, 230, 90, 0.12);
+    color: var(--teamup-accent);
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    font-size: 0.65rem;
+}
+
+/* Карточки */
+
+.card-teamup {
+    background: var(--teamup-surface);
+    border-radius: var(--teamup-radius);
+    border: 1px solid var(--teamup-border);
+    padding: 1.7rem 1.9rem;
+    box-shadow: var(--teamup-shadow-soft);
+}
+
+.card-teamup + .card-teamup {
+    margin-top: 1.25rem;
+}
+
+.card-teamup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.8rem;
+}
+
+.card-teamup-title {
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+.card-teamup-meta {
+    font-size: 0.85rem;
+    color: var(--teamup-text-soft);
+}
+
+/* Кнопки */
+
+.btn-primary-teamup {
+    background: var(--teamup-accent);
+    color: #000000;
+    font-weight: 600;
+    border-radius: var(--teamup-radius-pill);
+    padding: 0.7rem 1.6rem;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.35rem;
+    font-size: 0.95rem;
+    transition: 0.18s ease-out;
+    box-shadow: 0 0 12px rgba(0, 230, 90, 0.35);
+}
+
+.btn-primary-teamup:hover {
+    background: var(--teamup-accent-dark);
+    color: #000000;
+    transform: translateY(-1px);
+    box-shadow: 0 0 18px rgba(0, 196, 73, 0.55);
+}
+
+.btn-secondary-teamup {
+    background: transparent;
+    color: var(--teamup-text-muted);
+    border-radius: var(--teamup-radius-pill);
+    padding: 0.7rem 1.5rem;
+    border: 1px solid var(--teamup-border);
+    font-size: 0.92rem;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.35rem;
+    transition: 0.18s ease-out;
+}
+
+.btn-secondary-teamup:hover {
+    border-color: var(--teamup-accent);
+    color: var(--teamup-accent);
+}
+
+/* маленькие кнопки */
+
+.btn-sm {
+    padding: 0.35rem 0.9rem;
+    font-size: 0.8rem;
+}
+
+/* Фокус состояний */
+
+.btn:focus,
+.btn-primary-teamup:focus,
+.btn-secondary-teamup:focus,
+.form-control:focus,
+.form-select:focus,
+.form-check-input:focus {
+    outline: none;
+    box-shadow: 0 0 0 1px rgba(0, 230, 90, 0.35);
+    border-color: var(--teamup-accent);
+}
+
+/* Формы */
+
+.form-label {
+    font-size: 0.8rem;
+    color: var(--teamup-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.35rem;
+}
+
+.form-control,
+.form-select {
+    background: var(--teamup-surface-soft);
+    border-radius: var(--teamup-radius-pill);
+    border: 1px solid var(--teamup-border);
+    color: var(--teamup-text);
+    font-size: 0.95rem;
+    padding: 0.6rem 0.9rem;
+}
+
+.form-control::placeholder {
+    color: var(--teamup-text-soft);
+}
+
+/* Чекбоксы и радио */
+
+.form-check-input {
+    background-color: #000000;
+    border: 1px solid var(--teamup-border-strong);
+}
+
+.form-check-input:checked {
+    background-color: var(--teamup-accent);
+    border-color: var(--teamup-accent);
+}
+
+/* Бейджи и статусы */
+
+.badge-soft {
+    border-radius: 999px;
+    padding: 0.18rem 0.7rem;
+    font-size: 0.75rem;
+    border: 1px solid var(--teamup-border);
+    background: rgba(255, 255, 255, 0.03);
+    color: var(--teamup-text-muted);
+}
+
+.badge-green {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    padding: 0.28rem 0.9rem;
+    font-size: 0.8rem;
+    border: 1px solid rgba(0, 230, 90, 0.6);
+    background: rgba(0, 230, 90, 0.14);
+    color: var(--teamup-accent);
+    line-height: 1;
+}
+
+/* Таблицы */
+
+.table-teamup {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.table-teamup thead {
+    background: #070707;
+}
+
+.table-teamup th,
+.table-teamup td {
+    padding: 0.75rem 0.85rem;
+    border-bottom: 1px solid var(--teamup-border);
+}
+
+.table-teamup th {
+    font-weight: 500;
+    color: var(--teamup-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-size: 0.75rem;
+}
+
+.table-teamup tbody tr:hover {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+/* Страницы авторизации */
+
+.auth-page {
+    min-height: calc(100vh - 70px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 1rem;
+}
+
+.auth-card {
+    background: var(--teamup-surface);
+    border-radius: var(--teamup-radius-lg);
+    border: 1px solid var(--teamup-border-strong);
+    box-shadow:
+        0 0 25px rgba(0, 230, 90, 0.12),
+        0 18px 40px rgba(0, 0, 0, 0.85);
+    max-width: 1100px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.auth-card-left,
+.auth-card-right {
+    padding: 3rem;
+}
+
+.auth-card-right {
+    border-left: 1px solid var(--teamup-border);
+    background: radial-gradient(circle at top, rgba(0, 230, 90, 0.18), transparent 60%);
+}
+
+/* Грид для 2-колоночного логина/регистрации */
+
+@media (min-width: 768px) {
+    .auth-card-grid {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .auth-card-right {
+        border-left: none;
+        border-top: 1px solid var(--teamup-border);
+    }
+}
+
+/* Courts / Cards layout */
+
+.courts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.25rem;
+}
+
+.court-card {
+    background: var(--teamup-surface);
+    border-radius: var(--teamup-radius);
+    border: 1px solid var(--teamup-border);
+    padding: 1.2rem 1.4rem 1.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    min-height: 260px;
+}
+
+.court-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.court-card-name {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.court-card-location {
+    font-size: 0.9rem;
+    color: var(--teamup-text-muted);
+}
+
+.court-card-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 0.86rem;
+    margin-top: 0.3rem;
+    color: var(--teamup-text-soft);
+}
+
+.court-card-actions {
+    margin-top: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.6rem;
+}
+
+/* Dashboard layout */
+
+.dashboard-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1.4fr);
+    gap: 1.4rem;
+}
+
+.dashboard-main {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.dashboard-side {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+@media (max-width: 991.98px) {
+    .dashboard-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Games list layout (Today’s games) */
+
+.game-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.25rem;
+}
+
+.game-row-main {
+    flex: 1;
+}
+
+.game-row-title {
+    font-weight: 600;
+    font-size: 0.98rem;
+}
+
+.game-row-meta {
+    font-size: 0.88rem;
+    color: var(--teamup-text-soft);
+    margin-top: 0.15rem;
+}
+
+.game-row-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.4rem;
+}
+
+.game-divider {
+    border: none;
+    border-top: 1px solid var(--teamup-border);
+    margin: 0.75rem 0;
+}
+
+/* Suggested games cards */
+
+.suggested-card {
+    border-radius: var(--teamup-radius);
+    border: 1px solid var(--teamup-border);
+    padding: 1.1rem 1.2rem 1.2rem;
+    background: radial-gradient(circle at top left, #151515 0, #0D0D0D 55%);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.suggested-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0.75rem;
+}
+
+.suggested-title {
+    font-weight: 600;
+    font-size: 0.98rem;
+}
+
+.suggested-location {
+    color: var(--teamup-text-soft);
+    font-size: 0.9rem;
+    margin-top: 0.2rem;
+}
+
+.time-pill {
+    border-radius: 999px;
+    border: 1px solid var(--teamup-border);
+    padding: 0.18rem 0.75rem;
+    font-size: 0.78rem;
+    color: var(--teamup-text-muted);
+}
+
+.suggested-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 0.82rem;
+    color: var(--teamup-text-soft);
+    margin-top: 0.55rem;
+}
+
+.suggested-cta {
+    margin-top: 0.9rem;
+}
+
+/* Футер */
+
+.footer-teamup {
+    border-top: 1px solid var(--teamup-border);
+    padding: 1rem 0;
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    color: var(--teamup-text-soft);
+}
+
+/* Дополнительные утилиты */
+
+.chip {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+    padding: 0.28rem 0.8rem;
+    border-radius: 999px;
+    border: 1px solid var(--teamup-border);
+    background: rgba(255, 255, 255, 0.02);
+    color: var(--teamup-text-soft);
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: 0.15s ease-out;
+    white-space: nowrap;
+}
+
+.chip:hover {
+    border-color: var(--teamup-accent);
+    color: var(--teamup-accent);
+}
+
+.chip-active {
+    border-color: rgba(0, 230, 90, 0.6);
+    background: rgba(0, 230, 90, 0.12);
+    color: var(--teamup-accent);
+}
+
+/* Отступы для main (если layout использует header) */
+
+main {
+    padding-top: 1.5rem;
+    padding-bottom: 2.5rem;
+}
+
+/* Team Owner & Admin dashboards */
+
+.stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.stat-card {
+    background: radial-gradient(circle at top, #151515 0, #0D0D0D 55%);
+    border-radius: var(--teamup-radius);
+    border: 1px solid var(--teamup-border);
+    padding: 0.9rem 1rem;
+}
+
+.stat-label {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--teamup-text-soft);
+    margin-bottom: 0.2rem;
+}
+
+.stat-value {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.admin-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.admin-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.55rem 0;
+    border-bottom: 1px solid var(--teamup-border);
+    font-size: 0.88rem;
+}
+
+.admin-list-item:last-child {
+    border-bottom: none;
+}
+
+.tag-pill {
+    border-radius: 999px;
+    padding: 0.1rem 0.6rem;
+    font-size: 0.78rem;
+    border: 1px solid var(--teamup-border);
+    color: var(--teamup-text-soft);
+}
+
+/* Filter bar for courts */
+
+.filter-bar {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) minmax(0, 1.6fr);
+    gap: 1rem;
+    align-items: flex-end;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.filter-group-small {
+    min-width: 0;
+}
+
+/* адаптив фильтр-бара */
+
+@media (max-width: 991.98px) {
+    .filter-bar {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .filter-bar {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Game details: lineups */
+
+.lineup-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+.lineup-team-name {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: var(--teamup-text-muted);
+    margin-bottom: 0.4rem;
+}
+
+.lineup-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-radius: var(--teamup-radius);
+    border: 1px solid var(--teamup-border);
+    background: #0B0B0B;
+}
+
+.lineup-player {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.55rem 0.75rem;
+    border-bottom: 1px solid var(--teamup-border);
+    font-size: 0.88rem;
+}
+
+.lineup-player:last-child {
+    border-bottom: none;
+}
+
+.lineup-player-empty span:first-child {
+    color: var(--teamup-text-soft);
+    font-style: italic;
+}
+
+/* My bookings / schedule */
+
+.schedule-tabs {
+    display: inline-flex;
+    gap: 0.35rem;
+    padding: 0.15rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--teamup-border);
+}
+
+.schedule-tab {
+    border-radius: 999px;
+    border: none;
+    background: transparent;
+    color: var(--teamup-text-soft);
+    font-size: 0.8rem;
+    padding: 0.32rem 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    cursor: default;
+}
+
+.schedule-tab-active {
+    background: rgba(0, 230, 90, 0.15);
+    color: var(--teamup-accent);
+}
+
+.schedule-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-top: 0.9rem;
+}
+
+.schedule-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 0.7rem 0;
+    border-bottom: 1px solid var(--teamup-border);
+}
+
+.schedule-item:last-child {
+    border-bottom: none;
+}
+
+.schedule-main {
+    flex: 1;
+}
+
+.schedule-title {
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.schedule-meta {
+    font-size: 0.86rem;
+    color: var(--teamup-text-soft);
+    margin-top: 0.18rem;
+}
+
+.schedule-side {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.35rem;
+}
+
+@media (max-width: 575.98px) {
+    .schedule-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .schedule-side {
+        align-items: flex-start;
+    }
+}
+
+/* Player profile */
+
+.profile-card {
+    margin-bottom: 1.5rem;
+    padding: 1.4rem 1.6rem 1.3rem;
+}
+
+/* верхняя часть карточки */
+
+.profile-header {
+    display: grid;
+    grid-template-columns: auto minmax(0, 3fr) minmax(230px, 1fr);
+    column-gap: 1.6rem;
+    row-gap: 1rem;
+    align-items: center;
+}
+
+.profile-avatar {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 0,
+        rgba(0, 230, 90, 0.4),
+        #050505 65%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(0, 230, 90, 0.5);
+    box-shadow: 0 0 18px rgba(0, 230, 90, 0.25);
+}
+
+.profile-avatar-initials {
+    font-weight: 600;
+    font-size: 1.2rem;
+    letter-spacing: 0.06em;
+}
+
+.profile-main {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.profile-row-top {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    gap: 0.8rem;
+}
+
+.profile-title-block {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.5rem;
+}
+
+.profile-name {
+    font-size: 1.35rem;
+    font-weight: 600;
+}
+
+.profile-handle {
+    font-size: 0.9rem;
+    color: var(--teamup-text-soft);
+}
+
+.profile-sports-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.profile-bio {
+    font-size: 0.9rem;
+    color: var(--teamup-text-muted);
+    max-width: 54rem;
+}
+
+.profile-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.9rem;
+}
+
+.profile-meta span {
+    color: var(--teamup-text-soft);
+}
+
+/* правая колонка с кнопками */
+
+.profile-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    align-self: stretch;
+    justify-content: center;
+}
+
+.profile-action-btn {
+    width: 100%;
+}
+
+/* нижняя строка статистики */
+
+.profile-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 1rem;
+    margin-top: 1.4rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--teamup-border);
+}
+
+.profile-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+
+.profile-stat-value {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.profile-stat-label {
+    font-size: 0.8rem;
+    color: var(--teamup-text-soft);
+}
+
+/* Preferences grid */
+
+.profile-preferences-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.profile-preference-value {
+    font-size: 0.9rem;
+    color: var(--teamup-text-muted);
+}
+
+/* Responsive profile */
+
+@media (max-width: 991.98px) {
+    .profile-header {
+        grid-template-columns: auto minmax(0, 1fr);
+    }
+
+    .profile-actions {
+        grid-column: 1 / -1;
+        max-width: 260px;
+        align-self: flex-start;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .profile-header {
+        grid-template-columns: auto minmax(0, 1fr);
+        column-gap: 1rem;
+    }
+
+    .profile-name {
+        font-size: 1.2rem;
+    }
+}
+
+/* Audience / Spectator page */
+
+.spectator-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.4rem;
+}
+
+.spectator-card {
+    background: radial-gradient(circle at top, #151515 0, #050505 55%);
+    border-radius: var(--teamup-radius);
+    border: 1px solid var(--teamup-border);
+    padding: 1rem 1.1rem 0.9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.spectator-card-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.8rem;
+    align-items: flex-start;
+}
+
+.spectator-location {
+    font-size: 0.88rem;
+    color: var(--teamup-text-soft);
+}
+
+.spectator-title {
+    font-size: 0.98rem;
+    font-weight: 500;
+}
+
+.spectator-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    font-size: 0.85rem;
+    color: var(--teamup-text-soft);
+}
+
+.spectator-footer {
+    margin-top: 0.2rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.8rem;
+    align-items: center;
+}
+
+/* Team page */
+
+.team-hero {
+    margin-bottom: 1.5rem;
+}
+
+.team-hero-main {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+}
+
+.team-badge {
+    width: 72px;
+    height: 72px;
+    border-radius: 20px;
+    background: radial-gradient(circle at 30% 0,
+        rgba(0, 230, 90, 0.35),
+        #050505 60%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    border: 1px solid rgba(0, 230, 90, 0.6);
+}
+
+.team-hero-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.9rem;
+    color: var(--teamup-text-soft);
+}
+
+.team-hero-stats {
+    margin-top: 1.1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 1rem;
+    border-top: 1px solid var(--teamup-border);
+    padding-top: 1rem;
+}
+
+@media (max-width: 575.98px) {
+    .team-hero-main {
+        align-items: flex-start;
+    }
+}
+
+/* Empty states */
+
+.empty-state {
+    border-radius: var(--teamup-radius);
+    border: 1px dashed var(--teamup-border);
+    padding: 1.1rem 1.2rem;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.01);
+}
+
+.empty-state-title {
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-bottom: 0.2rem;
+}
+
+.empty-state-text {
+    font-size: 0.86rem;
+    color: var(--teamup-text-soft);
+    margin-bottom: 0.6rem;
+}
+
+/* Booking form, shared form elements */
+
+.form-control-teamup {
+    width: 100%;
+    background: #0b0b0b;
+    border: 1px solid var(--teamup-border);
+    color: var(--teamup-text);
+    padding: 0.65rem 0.75rem;
+    border-radius: var(--teamup-radius);
+    font-size: 0.9rem;
+}
+
+.form-control-teamup:focus {
+    outline: none;
+    border-color: rgba(0, 230, 90, 0.6);
+    box-shadow: 0 0 0 2px rgba(0, 230, 90, 0.15);
+}
+
+.form-label-teamup {
+    font-size: 0.82rem;
+    margin-bottom: 0.25rem;
+    color: var(--teamup-text-soft);
+}
+
+.booking-card {
+    max-width: 430px;
+    margin: 0 auto;
+    padding: 2.2rem 2rem;
+}
+
+/* Validation messages */
+
+.validation-error {
+    color: #ff6b6b;
+    font-size: 0.8rem;
+    margin-top: 0.25rem;
+}
+
+/* Summary block */
+
+.validation-summary-errors {
+    background: rgba(255, 80, 80, 0.08);
+    border: 1px solid rgba(255, 80, 80, 0.3);
+    padding: 0.75rem;
+    color: #ff6b6b;
+    border-radius: var(--teamup-radius);
+    margin-bottom: 1rem;
+}
+
+/* Success banner */
+
+.alert-success-teamup {
+    background: rgba(0, 230, 90, 0.12);
+    border: 1px solid rgba(0, 230, 90, 0.4);
+    color: var(--teamup-accent);
+    padding: 0.85rem 1rem;
+    border-radius: var(--teamup-radius);
+    margin-bottom: 1rem;
+}
+
+/* Mobile improvements */
+
+@media (max-width: 480px) {
+
+    .card-teamup {
+        padding: 1.2rem 1rem;
+    }
+
+    .dashboard-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .schedule-item {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .profile-header {
+        grid-template-columns: auto 1fr;
+        row-gap: 1rem;
+    }
+
+    .spectator-grid {
+        grid-template-columns: 1fr;
+    }
 }
