@@ -4180,19 +4180,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/dasaivanova/.nuget/packages/": {}
+    "/home/codespace/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/dasaivanova/comp231-002--Team1-TeamUp-SportsBooking/comp231-002--Team1-TeamUp-SportsBooking/comp231-002--Team1-TeamUp-SportsBooking.csproj",
+      "projectUniqueName": "/workspaces/comp231-002--Team1-TeamUp-SportsBooking/comp231-002--Team1-TeamUp-SportsBooking/comp231-002--Team1-TeamUp-SportsBooking.csproj",
       "projectName": "comp231-002--Team1-TeamUp-SportsBooking",
-      "projectPath": "/Users/dasaivanova/comp231-002--Team1-TeamUp-SportsBooking/comp231-002--Team1-TeamUp-SportsBooking/comp231-002--Team1-TeamUp-SportsBooking.csproj",
-      "packagesPath": "/Users/dasaivanova/.nuget/packages/",
-      "outputPath": "/Users/dasaivanova/comp231-002--Team1-TeamUp-SportsBooking/comp231-002--Team1-TeamUp-SportsBooking/obj/",
+      "projectPath": "/workspaces/comp231-002--Team1-TeamUp-SportsBooking/comp231-002--Team1-TeamUp-SportsBooking/comp231-002--Team1-TeamUp-SportsBooking.csproj",
+      "packagesPath": "/home/codespace/.nuget/packages/",
+      "outputPath": "/workspaces/comp231-002--Team1-TeamUp-SportsBooking/comp231-002--Team1-TeamUp-SportsBooking/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/dasaivanova/.nuget/NuGet/NuGet.Config"
+        "/home/codespace/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -4259,7 +4259,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.416/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.415/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
