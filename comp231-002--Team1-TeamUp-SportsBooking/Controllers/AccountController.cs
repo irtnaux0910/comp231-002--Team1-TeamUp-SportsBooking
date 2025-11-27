@@ -68,6 +68,7 @@ namespace comp231_002__Team1_TeamUp_SportsBooking.Controllers
 
             // 3) After successful registration, go to Login page
             return RedirectToAction("Login");
+            //
         }
     }
 }
