@@ -1,0 +1,132 @@
+@{
+    ViewData["Title"] = "Team details";
+}
+
+<main class="main-container">
+
+    <!-- HERO -->
+    <section class="card-teamup team-hero">
+        <div class="team-hero-main">
+            <div class="team-badge">
+                <span>HS</span>
+            </div>
+
+            <div>
+                <div class="teamup-pill mb-2">
+                    BASKETBALL · SEMI-COMPETITIVE
+                </div>
+                <h1 class="section-title mb-1">
+                    Hoop Squad
+                </h1>
+                <p class="section-subtitle mb-2">
+                    Based in Downtown Toronto · usually plays at Downtown Sports Complex and
+                    Community Gym 3.
+                </p>
+
+                <div class="team-hero-meta small">
+                    <span>Captain · Alex Chen</span>
+                    <span>Roster · 10 players</span>
+                    <span>Home court · Downtown Sports Complex</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="team-hero-stats">
+            <div class="profile-stat">
+                <div class="profile-stat-value">24</div>
+                <div class="profile-stat-label">Games this season</div>
+            </div>
+            <div class="profile-stat">
+                <div class="profile-stat-value">67%</div>
+                <div class="profile-stat-label">Win rate</div>
+            </div>
+            <div class="profile-stat">
+                <div class="profile-stat-value">8</div>
+                <div class="profile-stat-label">Players active</div>
+            </div>
+            <div class="profile-stat">
+                <div class="profile-stat-value">3</div>
+                <div class="profile-stat-label">Training sessions / week</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GRID: roster + upcoming games -->
+    <section class="dashboard-layout mt-3">
+
+        <!-- LEFT: roster -->
+        <div class="dashboard-main">
+            <div class="card-teamup">
+                <div class="card-teamup-header">
+                    <div>
+                        <div class="card-teamup-title">Roster</div>
+                        <div class="card-teamup-meta">
+                            Core players currently registered for this season.
+                        </div>
+                    </div>
+                    <span class="badge-soft">10 players</span>
+                </div>
+
+                <ul class="lineup-list small mt-1">
+                    <li class="lineup-player">
+                        <span>Alex Chen · Point Guard</span>
+                        <span class="tag-pill">Captain</span>
+                    </li>
+                    <li class="lineup-player">
+                        <span>Maria Lopez · Shooting Guard</span>
+                        <span class="tag-pill">Vice-captain</span>
+                    </li>
+                    <li class="lineup-player">
+                        <span>Jason Park · Center</span>
+                        <span class="tag-pill">Starter</span>
+                    </li>
+                    <li class="lineup-player">
+                        <span>Emily Chen · Small Forward</span>
+                        <span class="tag-pill">Starter</span>
+                    </li>
+                    <li class="lineup-player">
+                        <span>David Kim · Power Forward</span>
+                        <span class="tag-pill">Starter</span>
+                    </li>
+                    <li class="lineup-player lineup-player-empty">
+                        <span>+ 5 bench players</span>
+                        <span class="tag-pill">Bench</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- RIGHT: upcoming games -->
+        <aside class="dashboard-side">
+            <div class="card-teamup">
+                <div class="card-teamup-header">
+                    <div class="card-teamup-title">Upcoming games</div>
+                    <span class="badge-soft">Next 3</span>
+                </div>
+
+                <ul class="admin-list small mt-1">
+                    <li class="admin-list-item">
+                        <span>vs Net Masters · Sat · 19:00 · Downtown Sports Complex</span>
+                        <a asp-controller="Games" asp-action="Details" asp-route-id="1"
+                           class="btn-secondary-teamup btn-sm">View</a>
+                    </li>
+                    <li class="admin-list-item">
+                        <span>vs Spike Kings · Tue · 21:30 · Community Gym 3</span>
+                        <button class="btn-secondary-teamup btn-sm">View</button>
+                    </li>
+                    <li class="admin-list-item">
+                        <span>Pickup game · Fri · 20:00 · Centennial Park Court B</span>
+                        <button class="btn-secondary-teamup btn-sm">View</button>
+                    </li>
+                </ul>
+
+                <p class="small text-soft mt-3 mb-0">
+                    Later, it will be possible to substitute the real games of this team from the Game table here.,
+                    filtering by TeamID.
+                </p>
+            </div>
+        </aside>
+
+    </section>
+
+</main>

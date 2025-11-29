@@ -1,0 +1,89 @@
+CREATE DATABASE TeamUpDB;
+GO
+USE TeamUpDB;
+GO
+
+-- Player table
+CREATE TABLE Player (
+    PlayerID INT IDENTITY(1,1) PRIMARY KEY,
+    Name NVARCHAR(100),
+    Email NVARCHAR(100),
+    SportPreference NVARCHAR(50)
+);
+
+-- Team table
+CREATE TABLE Team (
+    TeamID INT IDENTITY(1,1) PRIMARY KEY,
+    TeamName NVARCHAR(100),
+    Sport NVARCHAR(50),
+    Description NVARCHAR(200)
+);
+
+-- Court table
+CREATE TABLE Court (
+    CourtID INT IDENTITY(1,1) PRIMARY KEY,
+    Location NVARCHAR(100),
+    SurfaceType NVARCHAR(50),
+    IsAvailable BIT
+);
+
+-- Game table
+CREATE TABLE Game (
+    GameID INT IDENTITY(1,1) PRIMARY KEY,
+    TeamID INT,
+    CourtID INT,
+    GameDate DATETIME,
+    Status NVARCHAR(50),
+    FOREIGN KEY (TeamID) REFERENCES Team(TeamID),
+    FOREIGN KEY (CourtID) REFERENCES Court(CourtID)
+);
+
+-- Booking table
+CREATE TABLE Booking (
+    BookingID INT IDENTITY(1,1) PRIMARY KEY,
+    PlayerID INT,
+    CourtID INT,
+    BookingDate DATETIME,
+    TimeSlot NVARCHAR(50),
+    FOREIGN KEY (PlayerID) REFERENCES Player(PlayerID),
+    FOREIGN KEY (CourtID) REFERENCES Court(CourtID)
+);
+-- Sample Players
+INSERT INTO Player (Name, Email, SportPreference) VALUES
+('John Smith', 'john@example.com', 'Tennis'),
+('Sarah Nguyen', 'sarah@example.com', 'Basketball'),
+('David Kim', 'david@example.com', 'Soccer'),
+('Emily Chen', 'emily@example.com', 'Badminton'),
+('Michael Brown', 'michael@example.com', 'Volleyball');
+
+-- Sample Teams
+INSERT INTO Team (TeamName, Sport, Description) VALUES
+('Net Masters', 'Tennis', 'Competitive local tennis group'),
+('Hoop Squad', 'Basketball', 'Evening pickup team'),
+('Goal Diggers', 'Soccer', 'Friendly weekend soccer club'),
+('Smash Bros', 'Badminton', 'Double players tournament team'),
+('Spike Kings', 'Volleyball', 'Recreational volleyball team');
+
+-- Sample Courts
+INSERT INTO Court (Location, SurfaceType, IsAvailable) VALUES
+('Downtown Sports Complex', 'Hard', 1),
+('Centennial Park Court A', 'Grass', 1),
+('Community Gym 3', 'Indoor', 0),
+('Riverdale Courts', 'Clay', 1),
+('Unionville Rec Center', 'Hard', 1);
+
+-- Sample Games
+INSERT INTO Game (TeamID, CourtID, GameDate, Status) VALUES
+(1, 1, '2025-10-12 15:00', 'Scheduled'),
+(2, 2, '2025-10-14 19:00', 'Scheduled'),
+(3, 4, '2025-10-15 09:30', 'Completed'),
+(4, 3, '2025-10-16 17:00', 'Cancelled'),
+(5, 5, '2025-10-18 14:00', 'Scheduled');
+
+-- Sample Bookings
+INSERT INTO Booking (PlayerID, CourtID, BookingDate, TimeSlot) VALUES
+(1, 1, '2025-10-10', '3:00 PM - 4:00 PM'),
+(2, 2, '2025-10-10', '6:00 PM - 7:00 PM'),
+(3, 3, '2025-10-11', '9:00 AM - 10:00 AM'),
+(4, 4, '2025-10-12', '5:00 PM - 6:00 PM'),
+(5, 5, '2025-10-13', '2:00 PM - 3:00 PM');

@@ -1,0 +1,51 @@
+@{
+    ViewData["Title"] = "Book a court";
+}
+
+<main class="main-container">
+
+    <section class="auth-card booking-card">
+
+        <h1 class="auth-title mb-3">Book this court</h1>
+        <p class="auth-subtitle mb-4">
+            Select a date and time slot for your reservation.
+        </p>
+
+        <form method="post">
+
+            <div class="form-group mb-3">
+                <label class="form-label-teamup">Date</label>
+                <input type="date" class="form-control-teamup" required />
+            </div>
+
+            <div class="form-group mb-3">
+                <label class="form-label-teamup">Time slot</label>
+                <select class="form-control-teamup" required>
+                    <option value="">Select a slot</option>
+                    <option>08:00 – 09:00</option>
+                    <option>09:00 – 10:00</option>
+                    <option>16:00 – 17:00</option>
+                    <option>18:00 – 19:00</option>
+                    <option>19:00 – 20:00</option>
+                </select>
+            </div>
+
+            <div class="form-group mb-4">
+                <label class="form-label-teamup">Notes (optional)</label>
+                <textarea class="form-control-teamup" rows="3"
+                          placeholder="Extra info for court staff..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary-teamup w-100 mb-3">
+                Confirm booking
+            </button>
+
+            <a asp-controller="Courts" asp-action="Index" class="btn-secondary-teamup w-100">
+                Cancel
+            </a>
+
+        </form>
+
+    </section>
+
+</main>
