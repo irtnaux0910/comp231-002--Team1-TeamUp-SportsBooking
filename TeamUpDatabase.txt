@@ -48,6 +48,28 @@ CREATE TABLE Booking (
     FOREIGN KEY (PlayerID) REFERENCES Player(PlayerID),
     FOREIGN KEY (CourtID) REFERENCES Court(CourtID)
 );
+
+--Notification Table
+CREATE TABLE Notification (
+    NotificationId INT IDENTITY(1,1) PRIMARY KEY,
+    PlayerID INT NOT NULL,
+    Message NVARCHAR(250) NOT NULL,
+    CreatedAt DATETIME NOT NULL DEFAULT(GETDATE()),
+    FOREIGN KEY (PlayerID) REFERENCES Player(PlayerID)
+);
+
+--TeamInvite Table
+CREATE TABLE TeamInvite (
+    TeamInviteId INT IDENTITY(1,1) PRIMARY KEY,
+    TeamID INT NOT NULL,
+    SenderPlayerID INT NOT NULL,
+    ReceiverEmail NVARCHAR(100) NOT NULL,
+    Status NVARCHAR(20) NOT NULL DEFAULT('Pending'),
+    SentAt DATETIME NOT NULL DEFAULT(GETDATE()),
+    FOREIGN KEY (TeamID) REFERENCES Team(TeamID),
+    FOREIGN KEY (SenderPlayerID) REFERENCES Player(PlayerID)
+);
+
 -- Sample Players
 INSERT INTO Player (Name, Email, SportPreference) VALUES
 ('John Smith', 'john@example.com', 'Tennis'),
